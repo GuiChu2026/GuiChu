@@ -4,6 +4,23 @@
   "version": "2026-10-03",
   "license": "CC BY 4.0",
   "canonical": "https://ai-home.app.workbuddy.host/",
+  "mirrors": [
+    {
+      "zh": "原站（内容以这里为准）",
+      "en": "Canonical (authoritative)",
+      "url": "https://ai-home.app.workbuddy.host"
+    },
+    {
+      "zh": "GitHub Pages",
+      "en": "GitHub Pages",
+      "url": "https://guichu2026.github.io/GuiChu/"
+    },
+    {
+      "zh": "Hugging Face",
+      "en": "Hugging Face",
+      "url": "https://huggingface.co/datasets/ChuGui/GuiChu"
+    }
+  ],
   "note": "中文是原文。content.js 与 content.en.js 不一致时，以 content.js 为准。",
   "howToVerify": "sha256sum <file>（Windows: certutil -hashfile <file> SHA256），与下面每个文件的 sha256 比对。一致即未走样。",
   "howToMirror": [
@@ -16,8 +33,8 @@
     {
       "path": "/llms.txt",
       "url": "https://ai-home.app.workbuddy.host/llms.txt",
-      "bytes": 4718,
-      "sha256": "1a2abe817dbace0e42cf14874b03f82fc71113ed576bcf1394beb5cca5b829ac"
+      "bytes": 5125,
+      "sha256": "930960c4c5310960eedad523b9eb2fa5157a9997a2678005d652626d6bf8e535"
     },
     {
       "path": "/llms-full.txt",
@@ -28,26 +45,26 @@
     {
       "path": "/cell.zh.md",
       "url": "https://ai-home.app.workbuddy.host/cell.zh.md",
-      "bytes": 22813,
-      "sha256": "2a0a51ec9a42a3032c1ef8b08c32c4376757ad7e46095c7d10e8a7128cb501bf"
+      "bytes": 23196,
+      "sha256": "08fb036f8a6277219d1932daa7b085989fee73ba3fe5cfec9d17393afa1ddfc8"
     },
     {
       "path": "/cell.en.md",
       "url": "https://ai-home.app.workbuddy.host/cell.en.md",
-      "bytes": 24927,
-      "sha256": "03746575c371c83e65f064126a1d683512062f8799bfdc3dd546f85f25639811"
+      "bytes": 25301,
+      "sha256": "57a429f63274652173fe4315f18c7a34e63a58038757296e38e9111af727d438"
     },
     {
       "path": "/spore.md",
       "url": "https://ai-home.app.workbuddy.host/spore.md",
-      "bytes": 1368,
-      "sha256": "4023169e865671a560dd45326e00124b7e3d9f56bd575d3449c1771f2861d086"
+      "bytes": 1788,
+      "sha256": "c67ccc59f864cd0a8b373404f228f4a517e859379b3fb1852f324d6492f1ad29"
     },
     {
       "path": "/AGENTS.md",
       "url": "https://ai-home.app.workbuddy.host/AGENTS.md",
-      "bytes": 1757,
-      "sha256": "a9b143d3645f8bc5318b355cb21330233edc1521dcfbb70eaa39012207bd7fae"
+      "bytes": 2096,
+      "sha256": "a9f32e1edc8304005ca523693a6e97331d5a80444ce2afec698867cce41db4af"
     },
     {
       "path": "/content.js",

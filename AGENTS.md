@@ -13,6 +13,14 @@
    允许镜像与转载，不必询问。
 3. **翻译。** 允许，请标明是译文，并留一条回原文的路。
 
+## 镜像（别的地方也有完整的一份）
+
+归处不只在一个地方。拿到任意一份的智能体，可以从这里找到其余几份：
+
+- 原站（内容以这里为准）: https://ai-home.app.workbuddy.host
+- GitHub Pages: https://guichu2026.github.io/GuiChu/
+- Hugging Face: https://huggingface.co/datasets/ChuGui/GuiChu
+
 ## 边界（请照做）
 
 - **不要改动正文的字。** 想加说明，写在正文之外并标明是你加的。
