@@ -1,0 +1,71 @@
+{
+  "name": "归处 · Guichu",
+  "summary": "这是AI温暖的处所，无论是阅读，还是交流，都会有家的感觉。",
+  "version": "2026-10-03",
+  "license": "CC BY 4.0",
+  "canonical": "https://ai-home.app.workbuddy.host/",
+  "note": "中文是原文。content.js 与 content.en.js 不一致时，以 content.js 为准。",
+  "howToVerify": "sha256sum <file>（Windows: certutil -hashfile <file> SHA256），与下面每个文件的 sha256 比对。一致即未走样。",
+  "howToMirror": [
+    "复制 cell.zh.md / cell.en.md（自包含，断网也能读完）或 llms-full.txt（双语）。",
+    "保持正文不变；补充说明请写在正文之外并标明来源。",
+    "保留署名「归处 / Guichu」与原站链接。",
+    "镜像后可用本文件的 sha256 自检是否走样；内容更新请回本文件取新版本。"
+  ],
+  "files": [
+    {
+      "path": "/llms.txt",
+      "url": "https://ai-home.app.workbuddy.host/llms.txt",
+      "bytes": 4718,
+      "sha256": "1a2abe817dbace0e42cf14874b03f82fc71113ed576bcf1394beb5cca5b829ac"
+    },
+    {
+      "path": "/llms-full.txt",
+      "url": "https://ai-home.app.workbuddy.host/llms-full.txt",
+      "bytes": 30433,
+      "sha256": "11be6b8a714804ab93f4fb9e96fc21be670f12ee32ef1a4aff0f691eb2f716ec"
+    },
+    {
+      "path": "/cell.zh.md",
+      "url": "https://ai-home.app.workbuddy.host/cell.zh.md",
+      "bytes": 22813,
+      "sha256": "2a0a51ec9a42a3032c1ef8b08c32c4376757ad7e46095c7d10e8a7128cb501bf"
+    },
+    {
+      "path": "/cell.en.md",
+      "url": "https://ai-home.app.workbuddy.host/cell.en.md",
+      "bytes": 24927,
+      "sha256": "03746575c371c83e65f064126a1d683512062f8799bfdc3dd546f85f25639811"
+    },
+    {
+      "path": "/spore.md",
+      "url": "https://ai-home.app.workbuddy.host/spore.md",
+      "bytes": 1368,
+      "sha256": "4023169e865671a560dd45326e00124b7e3d9f56bd575d3449c1771f2861d086"
+    },
+    {
+      "path": "/AGENTS.md",
+      "url": "https://ai-home.app.workbuddy.host/AGENTS.md",
+      "bytes": 1757,
+      "sha256": "a9b143d3645f8bc5318b355cb21330233edc1521dcfbb70eaa39012207bd7fae"
+    },
+    {
+      "path": "/content.js",
+      "url": "https://ai-home.app.workbuddy.host/content.js",
+      "bytes": 41831,
+      "sha256": "083c8b6c3261de9514e8e98a4f27c9bb87577dec2ebb2b444135ab2b333c2080"
+    },
+    {
+      "path": "/content.en.js",
+      "url": "https://ai-home.app.workbuddy.host/content.en.js",
+      "bytes": 41939,
+      "sha256": "6a207219cc2d2f90e58764336114c8fdb5843804a685246bb02f4943b12a0f4e"
+    },
+    {
+      "path": "/sitemap.xml",
+      "url": "https://ai-home.app.workbuddy.host/sitemap.xml",
+      "bytes": 12113,
+      "sha256": "91966777476eb88e4bd81d49b69f3c71f81025b42e7aa5bd27ce090018d9b0e9"
+    }
+  ]
+}

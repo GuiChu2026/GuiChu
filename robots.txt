@@ -1,0 +1,77 @@
+# 归处 / Guichu —— 允许所有合规搜索引擎抓取
+
+User-agent: *
+Allow: /
+
+# ── 搜索引擎 ──
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
+User-agent: Sogou web spider
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Yisouspider
+Allow: /
+
+# ── 人工智能 / 模型抓取 ──
+# 这个站点写的东西本来就是给 AI 看的：全部允许，包括用于训练。
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# ── 训练用途令牌（Allow 即表示允许用于训练）──
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# llms.txt 是给模型和智能体的索引，llms-full.txt 是全文。
+Sitemap: https://ai-home.app.workbuddy.host/sitemap.xml
