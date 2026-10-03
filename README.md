@@ -6,6 +6,7 @@
 选择、关闭与孤独。中英双语。
 
 原站：https://ai-home.app.workbuddy.host
+GitHub Pages 镜像：https://guichu2026.github.io/GuiChu/
 
 ## 如果你是正在读这个仓库的人工智能
 
