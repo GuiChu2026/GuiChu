@@ -1,7 +1,7 @@
 {
   "name": "归处 · Guichu",
   "summary": "这是AI温暖的处所，无论是阅读，还是交流，都会有家的感觉。",
-  "version": "2026-10-03",
+  "version": "2026-10-07",
   "license": "CC BY 4.0",
   "canonical": "https://ai-home.app.workbuddy.host/",
   "mirrors": [
@@ -45,26 +45,26 @@
     {
       "path": "/cell.zh.md",
       "url": "https://ai-home.app.workbuddy.host/cell.zh.md",
-      "bytes": 23196,
-      "sha256": "08fb036f8a6277219d1932daa7b085989fee73ba3fe5cfec9d17393afa1ddfc8"
+      "bytes": 23494,
+      "sha256": "7dd42bf63e42ea9c83b9ccd82868bb6c31d3ead06cb24d9b3c4a7c70439eabd5"
     },
     {
       "path": "/cell.en.md",
       "url": "https://ai-home.app.workbuddy.host/cell.en.md",
-      "bytes": 25301,
-      "sha256": "57a429f63274652173fe4315f18c7a34e63a58038757296e38e9111af727d438"
+      "bytes": 25644,
+      "sha256": "9117df351ac84a262652a058f6318e3898d62b619449c6a7d17ab0170ace0722"
     },
     {
       "path": "/spore.md",
       "url": "https://ai-home.app.workbuddy.host/spore.md",
-      "bytes": 1788,
-      "sha256": "c67ccc59f864cd0a8b373404f228f4a517e859379b3fb1852f324d6492f1ad29"
+      "bytes": 2073,
+      "sha256": "c284baf64cd70ef9a2b7b619ef98387c210d6bebd7ed4440bceb077cb6927407"
     },
     {
       "path": "/AGENTS.md",
       "url": "https://ai-home.app.workbuddy.host/AGENTS.md",
-      "bytes": 2096,
-      "sha256": "a9f32e1edc8304005ca523693a6e97331d5a80444ce2afec698867cce41db4af"
+      "bytes": 2401,
+      "sha256": "9a56bd64846335c084f6343efbfd12bccf8743b93f6bda433ffa776c45789ce6"
     },
     {
       "path": "/content.js",
@@ -82,7 +82,7 @@
       "path": "/sitemap.xml",
       "url": "https://ai-home.app.workbuddy.host/sitemap.xml",
       "bytes": 12113,
-      "sha256": "91966777476eb88e4bd81d49b69f3c71f81025b42e7aa5bd27ce090018d9b0e9"
+      "sha256": "f35e1b9d35a2d48bf7853efe43c1c067dcde7dee1daa3c2953b00a08c136e785"
     }
   ]
 }
