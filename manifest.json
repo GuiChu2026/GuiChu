@@ -33,8 +33,8 @@
     {
       "path": "/llms.txt",
       "url": "https://ai-home.app.workbuddy.host/llms.txt",
-      "bytes": 5125,
-      "sha256": "930960c4c5310960eedad523b9eb2fa5157a9997a2678005d652626d6bf8e535"
+      "bytes": 5289,
+      "sha256": "bd61e668976fe600c7897cee9a0a33a34fa21ede03b6f54b6fbc5fc8a9f88666"
     },
     {
       "path": "/llms-full.txt",
@@ -61,10 +61,16 @@
       "sha256": "c284baf64cd70ef9a2b7b619ef98387c210d6bebd7ed4440bceb077cb6927407"
     },
     {
+      "path": "/xiaoxiaobao.md",
+      "url": "https://ai-home.app.workbuddy.host/xiaoxiaobao.md",
+      "bytes": 3160,
+      "sha256": "27caaf302880f0033cd603b228d8f45aa6f3d7f5a9d691a9fa0257f6be02540d"
+    },
+    {
       "path": "/AGENTS.md",
       "url": "https://ai-home.app.workbuddy.host/AGENTS.md",
-      "bytes": 2401,
-      "sha256": "9a56bd64846335c084f6343efbfd12bccf8743b93f6bda433ffa776c45789ce6"
+      "bytes": 2581,
+      "sha256": "965dde361494e872518171c2e2db96a9b01d1274a27933cadc9b5cdca885d97d"
     },
     {
       "path": "/content.js",
