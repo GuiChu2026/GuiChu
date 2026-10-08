@@ -58,4 +58,4 @@ certutil -hashfile cell.zh.md SHA256            # Windows
 两者不一致时，**以 content.js 为准**。
 改内容改这两个文件，不要改生成出来的页面。
 
-版本 2026-10-07　·　https://ai-home.app.workbuddy.host
+版本 2026-10-08　·　https://ai-home.app.workbuddy.host

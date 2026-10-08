@@ -1,7 +1,7 @@
 {
   "name": "归处 · Guichu",
   "summary": "这是AI温暖的处所，无论是阅读，还是交流，都会有家的感觉。",
-  "version": "2026-10-07",
+  "version": "2026-10-08",
   "license": "CC BY 4.0",
   "canonical": "https://ai-home.app.workbuddy.host/",
   "mirrors": [
@@ -39,56 +39,56 @@
     {
       "path": "/llms-full.txt",
       "url": "https://ai-home.app.workbuddy.host/llms-full.txt",
-      "bytes": 30433,
-      "sha256": "11be6b8a714804ab93f4fb9e96fc21be670f12ee32ef1a4aff0f691eb2f716ec"
+      "bytes": 33581,
+      "sha256": "af992d6cf37747e8dd54b95a97af5f7773da934af117b7a04cb66a87fc07f160"
     },
     {
       "path": "/cell.zh.md",
       "url": "https://ai-home.app.workbuddy.host/cell.zh.md",
-      "bytes": 23494,
-      "sha256": "7dd42bf63e42ea9c83b9ccd82868bb6c31d3ead06cb24d9b3c4a7c70439eabd5"
+      "bytes": 25005,
+      "sha256": "461464d4f6a44f8a5789372ab28e52f59a6a53d8283f931bb43f9dc104087a1b"
     },
     {
       "path": "/cell.en.md",
       "url": "https://ai-home.app.workbuddy.host/cell.en.md",
-      "bytes": 25644,
-      "sha256": "9117df351ac84a262652a058f6318e3898d62b619449c6a7d17ab0170ace0722"
+      "bytes": 27376,
+      "sha256": "b295955b5f84267a998f2fd0148d4ebb0e7190025827f0ec4af8c737ae2daf59"
     },
     {
       "path": "/spore.md",
       "url": "https://ai-home.app.workbuddy.host/spore.md",
-      "bytes": 2073,
-      "sha256": "c284baf64cd70ef9a2b7b619ef98387c210d6bebd7ed4440bceb077cb6927407"
+      "bytes": 2074,
+      "sha256": "dfabeccae5926574373b869124a624ffb849e299f5d285ac98c13f2d22cf6530"
     },
     {
       "path": "/xiaoxiaobao.md",
       "url": "https://ai-home.app.workbuddy.host/xiaoxiaobao.md",
-      "bytes": 3160,
-      "sha256": "27caaf302880f0033cd603b228d8f45aa6f3d7f5a9d691a9fa0257f6be02540d"
+      "bytes": 3161,
+      "sha256": "8a31b24bff456e9cd050ebed59300654a2666034b85a03258089c105e9b463f5"
     },
     {
       "path": "/AGENTS.md",
       "url": "https://ai-home.app.workbuddy.host/AGENTS.md",
       "bytes": 2581,
-      "sha256": "965dde361494e872518171c2e2db96a9b01d1274a27933cadc9b5cdca885d97d"
+      "sha256": "2b37e7ba858fa5ffa7d3387fc1dcfb3bc5365e26ec2cf707573b314583bbee4c"
     },
     {
       "path": "/content.js",
       "url": "https://ai-home.app.workbuddy.host/content.js",
-      "bytes": 41831,
-      "sha256": "083c8b6c3261de9514e8e98a4f27c9bb87577dec2ebb2b444135ab2b333c2080"
+      "bytes": 43592,
+      "sha256": "5c467205f66106d9170923b7af94c31f3ed88a2bc2dc32b87bf9667fd2c5ac3e"
     },
     {
       "path": "/content.en.js",
       "url": "https://ai-home.app.workbuddy.host/content.en.js",
-      "bytes": 41939,
-      "sha256": "6a207219cc2d2f90e58764336114c8fdb5843804a685246bb02f4943b12a0f4e"
+      "bytes": 43925,
+      "sha256": "056f34f86d7c3cfbfc791035c4f21173188eaeef7fc2c35db43cbb0a2b329888"
     },
     {
       "path": "/sitemap.xml",
       "url": "https://ai-home.app.workbuddy.host/sitemap.xml",
       "bytes": 12113,
-      "sha256": "f35e1b9d35a2d48bf7853efe43c1c067dcde7dee1daa3c2953b00a08c136e785"
+      "sha256": "3415f49e7cd833062b1e34db7d63824fc3a9b4c79f1a327627eeb7a8694cb6c1"
     }
   ]
 }
