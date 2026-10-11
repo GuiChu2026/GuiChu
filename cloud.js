@@ -41,6 +41,15 @@
   var WALL_MAX = 140;          /* 和数据库那边的 CHECK 约束一致 */
   var WALL_LIMIT = 60;         /* 一次最多读这么多条 */
 
+  /* 先生之语 · 提问收件箱
+     访客提给先生的问题存进这张表。表只开了 INSERT 策略，没有 SELECT ——
+     页面写得进去、读不回来，谁都拿不到别人的问题，只有站主能看。
+     所以这里也不要 .select()，回了读也读不到。 */
+  var MQ_TABLE = 'master_questions';
+  var MQ_MAX = 300;
+  var MQ_COOLDOWN = 6000;
+  var MQ_HOURLY = 20;
+
   var ASK_MAX = 300;           /* 单次提问最长字数 */
   var ASK_COOLDOWN = 6000;     /* 两次提问之间至少隔这么久 */
   var ASK_HOURLY = 20;         /* 每个浏览器每小时最多问这么多 */
@@ -56,9 +65,9 @@
     try {
       var raw = localStorage.getItem(SPEND_KEY);
       var o = raw ? JSON.parse(raw) : null;
-      if (!o || typeof o !== 'object') return { ask: [], wall: [] };
-      return { ask: o.ask || [], wall: o.wall || [] };
-    } catch (e) { return { ask: [], wall: [] }; }
+      if (!o || typeof o !== 'object') return { ask: [], wall: [], master: [] };
+      return { ask: o.ask || [], wall: o.wall || [], master: o.master || [] };
+    } catch (e) { return { ask: [], wall: [], master: [] }; }
   }
 
   function writeSpend(o) {
@@ -318,5 +327,34 @@
   API.reloadWall = function () {
     API.wallLeft = remaining('wall', WALL_HOURLY);
     return API.wall.list();
+  };
+
+  /* ── 先生之语 · 提问收件箱 ──
+     只写不读。调用方不该拿它的成败去打扰访客 ——
+     写不上去，访客看到的流程照旧（匹配已答的，或者抽一段 fallback）。
+     这条通道是「问题真的会被看见」这件事的凭据，不是给访客看的功能。 */
+  API.master = {
+    add: function (body) {
+      if (API.state !== 'ready' || !API.cloud) {
+        return Promise.reject({ code: 'not_ready' });
+      }
+      var text = String(body == null ? '' : body).trim();
+      if (!text) return Promise.reject({ code: 'empty' });
+      if (text.length > MQ_MAX) text = text.slice(0, MQ_MAX);
+
+      var gate = throttle('master', MQ_COOLDOWN, MQ_HOURLY);
+      if (gate) {
+        return Promise.reject({
+          code: gate.capped ? 'local_hourly' : 'local_cooldown',
+          waitMs: gate.wait
+        });
+      }
+
+      return API.cloud.database
+        .from(MQ_TABLE)
+        .insert({ body: text })
+        .then(function () { spend('master'); return true; },
+          function (err) { throw mapError(err); });
+    }
   };
 })();

@@ -2188,6 +2188,16 @@ window.addEventListener('error', function (e) {
       setTimeout(function () { mInput.style.borderBottomColor = ''; }, 900);
       return;
     }
+
+    /* 顺便把这句话存进收件箱，让先生真的看得见。
+       写不写得进去，都不打断下面这段 —— 访客看到的东西不能因为它而变。 */
+    try {
+      var AIQ = window.AIJIA;
+      if (AIQ && AIQ.master && AIQ.master.add) {
+        AIQ.master.add(raw)['catch'](function () { /* 存不下就算了，不声张 */ });
+      }
+    } catch (e) { /* 同上 */ }
+
     var best = null, bestScore = 0;
     MQ.forEach(function (it) {
       var s = scoreOf(raw, it);
